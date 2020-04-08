@@ -40,6 +40,18 @@ public class CacheConfiguration {
             createCache(cm, com.mycompany.portmantos.domain.User.class.getName());
             createCache(cm, com.mycompany.portmantos.domain.Authority.class.getName());
             createCache(cm, com.mycompany.portmantos.domain.User.class.getName() + ".authorities");
+            createCache(cm, com.mycompany.portmantos.domain.Region.class.getName());
+            createCache(cm, com.mycompany.portmantos.domain.Country.class.getName());
+            createCache(cm, com.mycompany.portmantos.domain.Location.class.getName());
+            createCache(cm, com.mycompany.portmantos.domain.Department.class.getName());
+            createCache(cm, com.mycompany.portmantos.domain.Department.class.getName() + ".employees");
+            createCache(cm, com.mycompany.portmantos.domain.Task.class.getName());
+            createCache(cm, com.mycompany.portmantos.domain.Task.class.getName() + ".jobs");
+            createCache(cm, com.mycompany.portmantos.domain.Employee.class.getName());
+            createCache(cm, com.mycompany.portmantos.domain.Employee.class.getName() + ".jobs");
+            createCache(cm, com.mycompany.portmantos.domain.Job.class.getName());
+            createCache(cm, com.mycompany.portmantos.domain.Job.class.getName() + ".tasks");
+            createCache(cm, com.mycompany.portmantos.domain.JobHistory.class.getName());
             // jhipster-needle-ehcache-add-entry
         };
     }
